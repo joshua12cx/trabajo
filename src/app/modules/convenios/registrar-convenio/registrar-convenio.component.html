@@ -1,0 +1,16 @@
+<h2>Registrar Convenio</h2>
+<form (ngSubmit)="registrarConvenio()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoConvenio.nombre" required>
+
+  <label for="inicio">Fecha Inicio:</label>
+  <input type="date" id="inicio" name="inicio" [(ngModel)]="nuevoConvenio.inicio" required>
+
+  <label for="fin">Fecha Fin:</label>
+  <input type="date" id="fin" name="fin" [(ngModel)]="nuevoConvenio.fin" required>
+
+  <label for="referencia">Referencia:</label>
+  <input type="text" id="referencia" name="referencia" [(ngModel)]="nuevoConvenio.referencia" required>
+
+  <button type="submit" routerLink="/home/convenio">Registrar Convenio</button>
+</form>

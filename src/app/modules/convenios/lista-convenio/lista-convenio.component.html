@@ -1,0 +1,31 @@
+<h2>lista empleado</h2>
+<button routerLink="/home/registrar-convenio" class="btn btn-info">Añadir convenio</button>
+<br>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>FECHA INICIO</th>
+            <th>FECHA FIN</th>
+            <th>REFERENCIA</th>
+            <th>Archivo</th>
+            <th>Acciones</th>
+        </tr>
+
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let Convenios of convenios">
+            <td>{{Convenios.id}}</td>
+            <td>{{Convenios.nombre}}</td>
+            <td>{{Convenios.inicio}}</td>
+            <td>{{Convenios.fin}}</td>
+            <td>{{Convenios.referencia}}</td>
+            <td>{{Convenios.archivo}}</td>
+
+
+    </tbody>
+
+</table>
