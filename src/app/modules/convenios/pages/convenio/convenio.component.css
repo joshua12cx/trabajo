@@ -1,3 +1,14 @@
+.pos {
+  display: flex;
+  height: 15%;
+  background: #070049;
+  margin-block-end: 10px;
+  border-radius: 10px;
+
+}
+
+
+
 .container{
   width: 100%;
   
@@ -46,4 +57,9 @@ button {
   display: flex;
   gap: 50px;
 
+}
+
+.bon{
+  margin-bottom: 16px;
+ 
 }

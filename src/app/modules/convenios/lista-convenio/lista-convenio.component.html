@@ -1,31 +1,34 @@
-<h2>lista empleado</h2>
-<button routerLink="/home/registrar-convenio" class="btn btn-info">Añadir convenio</button>
+<div class="bon">
+    <button class="btn btn-info">Todos</button>
+    <button class="btn btn-info">Activos</button>
+    <button class="btn btn-info">Inactivos</button>
+    <input type="text" id="searchInput">
+    <button class="fas fa-search"></button>
+    <button routerLink="/home/registrar-convenio" class="btn btn-info">Añadir convenio</button>
+</div>
 <br>
 
-<table class="table table-striped">
-    <thead class="table-dark">
+
+<table class="table table-striped custom-table">
+    <thead class="custom-table-header">
         <tr>
-            <th>ID</th>
             <th>NOMBRE</th>
-            <th>FECHA INICIO</th>
-            <th>FECHA FIN</th>
-            <th>REFERENCIA</th>
-            <th>Archivo</th>
-            <th>Acciones</th>
+            <th>TIPO</th>
+            <th>INICIO</th>
+            <th>FIN</th>
+            <th>DISTRITO</th>
+            <th>ESTADO</th>
+            <th>ACCIONES</th>
         </tr>
-
-
     </thead>
     <tbody>
         <tr *ngFor="let Convenios of convenios">
-            <td>{{Convenios.id}}</td>
             <td>{{Convenios.nombre}}</td>
             <td>{{Convenios.inicio}}</td>
             <td>{{Convenios.fin}}</td>
             <td>{{Convenios.referencia}}</td>
             <td>{{Convenios.archivo}}</td>
-
-
+            <!-- Agrega aquí las acciones que deseas mostrar para cada convenio -->
+        </tr>
     </tbody>
-
 </table>

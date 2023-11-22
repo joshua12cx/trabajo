@@ -20,7 +20,9 @@ export class RegistrarConvenioComponent {
       console.log('Convenio registrado exitosamente', response);
       // Puedes realizar alguna acción adicional después de registrar el convenio, como redireccionar o actualizar la lista de convenios.
      
-    });
+    },
+    (error) => {console.log(error)}
+    );
   }
 
   }
